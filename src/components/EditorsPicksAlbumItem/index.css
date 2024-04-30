@@ -1,0 +1,30 @@
+.playlist-image {
+  height: 166px;
+  width: 166px;
+  border-radius: 8px;
+}
+.play-list-item {
+  list-style: none;
+  margin: 5px;
+}
+.play-list-name {
+  color: #f8fafc;
+  font-family: 'ROboto';
+  font-size: small;
+  font-weight: 600;
+}
+.playlist-link {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+  .playlist-image {
+    height: 82px;
+    width: 82px;
+    range: 4px;
+  }
+  .play-list-name {
+    flex-wrap: wrap;
+    width: 82px;
+  }
+}

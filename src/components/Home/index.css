@@ -1,0 +1,15 @@
+.home-component-container {
+  display: flex;
+  background-color: #181818;
+  padding: 0px;
+}
+.home-container {
+  padding: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .home-component-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,22 @@
+.gener-album-image {
+  height: 166px;
+  width: 166px;
+  border-radius: 8px;
+}
+
+.geners-album-list-item {
+  list-style: none;
+  margin: 5px;
+}
+
+.gener-link {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+  .gener-album-image {
+    height: 82px;
+    width: 82px;
+    range: 4px;
+  }
+}

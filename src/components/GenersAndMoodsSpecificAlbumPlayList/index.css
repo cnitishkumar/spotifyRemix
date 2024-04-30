@@ -1,0 +1,83 @@
+.geners-component {
+  background-color: #181818;
+  padding: 10px;
+  min-height: 100vh;
+}
+.album-list {
+  list-style: none;
+  margin: 5px;
+  width: 160px;
+}
+.generes-album-ul-el {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.album-name-tracks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.geners-album-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+.genere-album-name {
+  color: #ffffff;
+  font-size: medium;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.total-tracks {
+  color: #64748b;
+  font-size: medium;
+  font-weight: 500;
+  margin-top: 0px;
+}
+.genere-type {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: x-large;
+  font-weight: bold;
+}
+.genre-description {
+  color: #ffffff;
+  font-size: small;
+  margin-top: 3px;
+  text-align: center;
+  width: 90%;
+  overflow: scroll;
+}
+
+@media screen and (max-width: 576px) {
+  .album-list {
+    list-style: none;
+    margin: 5px;
+    width: 100%;
+  }
+  .genere-album-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .album-name-tracks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .geners-album-image {
+    margin-right: 10px;
+    height: 100px;
+    width: 100px;
+  }
+  .generes-album-ul-el {
+    display: block;
+  }
+  .genre-description {
+      text-align: left;
+  }
+}

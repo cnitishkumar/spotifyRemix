@@ -1,0 +1,20 @@
+.featured-play-list-ul-el {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+}
+
+.editors-picks-heading {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: large;
+}
+
+@media screen and (max-width: 576px) {
+  .featured-play-list-ul-el {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

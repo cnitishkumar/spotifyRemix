@@ -1,0 +1,16 @@
+.back-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  border-width: 0px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: medium;
+  font-weight: bold;
+}
+.arrow-icon {
+  margin-right: 4px;
+  font-size: larger;
+  color: #ffffff;
+}

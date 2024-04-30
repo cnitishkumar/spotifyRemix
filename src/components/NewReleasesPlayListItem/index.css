@@ -1,0 +1,56 @@
+.new-relase-playlist-item {
+  color: #ffffff;
+  font-family: 'Roboto';
+  display: flex;
+  flex-grow: 1;
+  width: 30%;
+}
+.new-release-song-item {
+  color: #ffffff;
+  margin-left: 15px;
+}
+
+.new-release-track-num {
+  margin-right: 10px;
+  color: #ffffff;
+}
+.total-popularity {
+  color: #334155;
+}
+
+/* css taken from 'editors picks playlist item' */
+
+.mobile-li-el {
+  color: #ffffff;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 5;
+  margin-right: 0px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+.mobile-artist-name {
+  color: #9b9b9b;
+  font-size: medium;
+  font-weight: 600;
+}
+.mobile-track-name {
+  font-size: medium;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.mobile-duration {
+  color: #9b9b9b;
+  font-weight: 600;
+  margin-left: auto;
+}
+@media screen and (max-width: 576px) {
+  .li-el {
+    color: #ffffff;
+    padding: 5px;
+  }
+}

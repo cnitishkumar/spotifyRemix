@@ -1,0 +1,38 @@
+.new-release-album-image {
+  height: 166px;
+  width: 166px;
+  border-radius: 8px;
+}
+
+.new-release-album-list-item {
+  list-style: none;
+  margin: 5px;
+}
+
+.new-releases-link {
+  text-decoration: none;
+}
+.new-release-album-name {
+  color: #ffffff;
+  font-size: medium;
+  font-family: 'Roboto';
+  width: 166px;
+  text-align: center;
+  font-size: small;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 576px) {
+  .new-release-album-image {
+    height: 82px;
+    width: 82px;
+    range: 4px;
+  }
+  .new-release-album-name {
+    color: #ffffff;
+    font-size: medium;
+    font-family: 'Roboto';
+    text-align: center;
+    width: 82px;
+  }
+}

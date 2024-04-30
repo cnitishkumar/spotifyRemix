@@ -1,0 +1,45 @@
+.li-el {
+  display: flex;
+  list-style: none;
+  margin-top: 5px;
+  flex-grow: 1;
+}
+.track-num {
+  margin-right: 0px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-li-el {
+  color: #ffffff;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 5;
+  margin-right: 0px;
+}
+.mobile-artist-name {
+  color: #9b9b9b;
+  font-size: medium;
+  font-weight: 600;
+}
+.mobile-track-name {
+  font-size: medium;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.mobile-duration {
+  color: #9b9b9b;
+  font-weight: 600;
+  margin-left: auto;
+}
+@media screen and (max-width: 576px) {
+  .li-el {
+    color: #ffffff;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,22 @@
+.loader-image {
+  height: 50px;
+  width: 120px;
+}
+
+.loading-heading {
+  color: #ffffff;
+  font-size: larger;
+  font-family: 'Roboto';
+}
+
+.loader-container {
+  min-height: 400px;
+  min-width: 90vw;
+  max-width: 100vw;
+  background-color: #040306;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}

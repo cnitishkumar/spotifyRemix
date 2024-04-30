@@ -1,0 +1,21 @@
+.geners-heading {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: large;
+}
+.geners-list-ul-el {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media screen and (max-width: 576px) {
+  .geners-list-ul-el {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 0px;
+  }
+}
