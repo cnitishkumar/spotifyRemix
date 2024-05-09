@@ -68,14 +68,24 @@ class EditorsPicksSpecificAlbumPlayList extends Component {
 
       const playListData = await data.tracks.items
 
-      const formattedData = playListData.map(each => formatData(each))
+      const formattedData = {
+        playlistData: playListData.map(each => formatData(each)),
+        playListName: data.name,
+        playListImageUrl: data.images[0].url,
+        playListDescription: data.description,
+      }
 
-      const filteredSongs = formattedData.filter(
+      const filteredSongs = formattedData.playlistData.filter(
         each => each.previewUrl !== null,
       )
 
       this.setState({
         songsPlayList: filteredSongs,
+        playListDetails: {
+          playListName: formattedData.playListName,
+          playListImageUrl: formattedData.playListImageUrl,
+          playListDescription: formattedData.playListDescription,
+        },
         apiStatus: apiStatusConstants.success,
         activePlayListId: filteredSongs[0].id,
       })
@@ -85,13 +95,19 @@ class EditorsPicksSpecificAlbumPlayList extends Component {
   }
 
   render() {
-    const {songsPlayList, apiStatus, activePlayListId} = this.state
+    const {
+      songsPlayList,
+      apiStatus,
+      activePlayListId,
+      playListDetails,
+    } = this.state
 
     const result =
       apiStatus === apiStatusConstants.success ? (
         <PlayerController
           songsPlayList={songsPlayList}
           category="Editor's picks"
+          playListDetails={playListDetails}
         />
       ) : (
         <Loader />

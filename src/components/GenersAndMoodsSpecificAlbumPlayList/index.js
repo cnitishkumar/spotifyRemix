@@ -90,7 +90,7 @@ class GenersAndMoodsSpecificAlbumPlayList extends Component {
             <Link to={`playlist/${id}`} className="playlist-link">
               <img
                 src={albumImageUrl}
-                alt="albumimage"
+                alt="category"
                 className="geners-album-image"
               />
             </Link>

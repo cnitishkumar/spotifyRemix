@@ -59,7 +59,7 @@ class GenersAndMoodsAlbums extends Component {
 
     return (
       <nav>
-        <ul className="geners-list-ul-el">
+        <ul className="genre-list-ul-el">
           {albumsData.map(each => (
             <GenersAndMoodsAlbumItem albumDetails={each} key={each.albumId} />
           ))}
@@ -86,7 +86,7 @@ class GenersAndMoodsAlbums extends Component {
   render() {
     return (
       <div>
-        <h1 className="geners-heading">Genres & Moods</h1>
+        <h1 className="genre-heading">Genres & Moods</h1>
         {this.renderGeners()}
       </div>
     )

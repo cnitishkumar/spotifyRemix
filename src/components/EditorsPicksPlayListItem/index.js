@@ -20,6 +20,8 @@ const EditorsPicksPlayListItem = props => {
     name,
   } = playlistDetails
 
+  console.log(artist, 'artists')
+
   const onClickListItem = async () => {
     const index = songsPlayList.indexOf(playlistDetails)
     onClickPlayListItem(index)
@@ -56,7 +58,7 @@ const EditorsPicksPlayListItem = props => {
         <span className="play-list-song-item">
           {formatSongDuration(durationInMs)}
         </span>
-        <span className="play-list-song-item">{artist}</span>
+        <span className="play-list-song-item">{artist.join(' ')}</span>
         <span className="play-list-song-item">{added}</span>
       </div>
     </li>
@@ -65,7 +67,7 @@ const EditorsPicksPlayListItem = props => {
     <li className={mobilePlayListClassName} onClick={onClickListItem}>
       <div>
         <p className="mobile-track-name">{name}</p>
-        <p className="mobile-artist-name">{artist}</p>
+        <p className="mobile-artist-name">{artist.join(' ')}</p>
       </div>
       <p className="mobile-duration">{formatSongDuration(durationInMs)}</p>
     </li>

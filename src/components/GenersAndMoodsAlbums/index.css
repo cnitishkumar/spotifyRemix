@@ -1,9 +1,9 @@
-.geners-heading {
+.genre-heading {
   color: #ffffff;
   font-family: 'Roboto';
   font-size: large;
 }
-.geners-list-ul-el {
+.genre-list-ul-el {
   display: flex;
   flex-wrap: wrap;
   margin: 0px;
@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width: 576px) {
-  .geners-list-ul-el {
+  .genre-list-ul-el {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

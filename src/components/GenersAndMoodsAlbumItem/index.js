@@ -6,9 +6,10 @@ const GenersAndMoodsAlbumItem = props => {
   const {albumName, albumId, albumImageUrl} = albumDetails
 
   return (
-    <li className="geners-album-list-item">
-      <Link to={`/category/${albumId}/playlists`} className="genere-link">
-        <img src={albumImageUrl} alt="category" className="gener-album-image" />
+    <li className="genre-album-list-item">
+      <Link to={`/category/${albumId}/playlists`} className="genre-link">
+        <img src={albumImageUrl} alt="category" className="genre-album-image" />
+        <p className="album-name">{albumName}</p>
       </Link>
     </li>
   )

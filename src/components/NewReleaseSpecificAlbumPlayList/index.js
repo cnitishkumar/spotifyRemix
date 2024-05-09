@@ -70,6 +70,11 @@ class NewReleaseSpecificAlbumPlayList extends Component {
       this.setState({
         apiStatus: apiStatusConstants.success,
         songsPlayList: formattedData,
+        playListDetails: {
+          playListName: data.name,
+          playListImageUrl: data.images[0].url,
+          playListDescription: data.description,
+        },
       })
     } else {
       this.setState({apiStatus: apiStatusConstants.failure})
@@ -77,13 +82,14 @@ class NewReleaseSpecificAlbumPlayList extends Component {
   }
 
   renderNewReleases = () => {
-    const {apiStatus, songsPlayList} = this.state
+    const {apiStatus, songsPlayList, playListDetails} = this.state
 
     switch (apiStatus) {
       case apiStatusConstants.success:
         return (
           <PlayerController
             songsPlayList={songsPlayList}
+            playListDetails={playListDetails}
             category="New Releases"
           />
         )

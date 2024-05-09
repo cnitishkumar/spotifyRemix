@@ -3,6 +3,7 @@ import {FaPlayCircle, FaPauseCircle, FaVolumeUp} from 'react-icons/fa'
 
 import EditorsPicksPlayListItem from '../EditorsPicksPlayListItem'
 import NewReleasesPlayListItem from '../NewReleasesPlayListItem'
+
 import Header from '../Header'
 
 import BackNavigation from '../BackNavigation'
@@ -16,6 +17,7 @@ class PlayerController extends Component {
     duration: 0,
     currentIndex: 0,
     playList: {...this.props}.songsPlayList,
+    playListDetails: {...this.props}.playListDetails,
     volume: 0.5,
     width: window.innerWidth,
   }
@@ -131,7 +133,7 @@ class PlayerController extends Component {
             />
             <div className="footer-display-details">
               <p className="footer-album-name">{album}</p>
-              <p className="footer-artist-name">{artist.slice(1).join(',')}</p>
+              <p className="footer-artist-name">{artist[0]}</p>
             </div>
           </div>
           <div className="controls">
@@ -190,7 +192,7 @@ class PlayerController extends Component {
 
   renderPlayList = () => {
     const {category} = this.props
-    const {playList, currentIndex, width} = this.state
+    const {playList, currentIndex, width, playListDetails} = this.state
 
     const ActiveCategory =
       category === "Editor's picks"
@@ -225,20 +227,25 @@ class PlayerController extends Component {
           <BackNavigation />
           <div className="header-album-display-container">
             <img
-              src={albumImageUrlsList[1].url}
-              alt="albumImage"
+              src={playListDetails.playListImageUrl}
+              alt={playListDetails.playListName}
               className="header-album-display-image"
             />
             <div className="header-display-details-container">
-              <h2 className="category-heading">
+              <p className="category-heading">
                 {category === "Editor's picks"
-                  ? 'Editors Picks'
+                  ? "Editor's Picks"
                   : 'New Releases'}
-              </h2>
-              <h1 className="header-display-album-name">{album}</h1>
-              <h2 className="header-display-artist-name">
-                Album By {artist[0]}
-              </h2>
+              </p>
+              <h1 className="header-display-album-name">
+                {playListDetails.playListName}
+              </h1>
+              <p className="header-display-artist-name">
+                {playList[0].artist[0]}
+              </p>
+              <p className="header-display-artist-name">
+                {playListDetails.playListDescription}
+              </p>
             </div>
           </div>
         </div>

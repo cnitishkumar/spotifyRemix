@@ -42,7 +42,7 @@ const NewReleasesPlayListItem = props => {
     <li className={mobilePlayListClassName} onClick={onClickListItem}>
       <div>
         <p className="mobile-track-name">{name}</p>
-        <p className="mobile-artist-name">{artist}</p>
+        <p className="mobile-artist-name">{artist.join(' ')}</p>
       </div>
       <p className="mobile-duration">{formatSongDuration(durationInMs)}</p>
     </li>
@@ -64,7 +64,7 @@ const NewReleasesPlayListItem = props => {
             {' '}
             {'|'.repeat(10 - popularity / 10)}
           </span>
-          <span className="new-relase-playlist-item">{artist}</span>
+          <span className="new-relase-playlist-item">{artist.join(' ')}</span>
         </div>
       </div>
     </li>

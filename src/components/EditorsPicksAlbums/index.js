@@ -84,7 +84,6 @@ class EditorsPicksAlbums extends Component {
         return <Loader />
       case apiStatusConstants.failure:
         return <FailureView fetchAlbumsData={this.fetchAlbumsData} />
-
       default:
         return null
     }
@@ -93,7 +92,7 @@ class EditorsPicksAlbums extends Component {
   render() {
     return (
       <div className="content-container">
-        <h1 className="editors-picks-heading">Editors Picks</h1>
+        <h1 className="editors-picks-heading">Editor&#39;s Picks</h1>
         {this.renderEditorsPicks()}
       </div>
     )
